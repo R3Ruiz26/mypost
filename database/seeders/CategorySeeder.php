@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
-class DatabaseSeeder extends Seeder
+class CategorySeeder extends Seeder
 {
     /**
      * Seed the application's database.
@@ -18,25 +18,30 @@ class DatabaseSeeder extends Seeder
     {
         DB::table('categories')->insert([
             'name' => 'Sports',
-            'code' => '001',
+            'id' => '001',
+            'status'=> 1,
         ]);
 
         DB::table('categories')->insert([
             'name' => 'News',
-            'code' => '002',
+            'id' => '002',
+            'status'=> 1,
         ]);
 
         DB::table('categories')->insert([
             'name' => 'Weather',
-            'code' => '003',
+            'id' => '003',
+            'status'=> 1,
         ]);
         DB::table('categories')->insert([
             'name' => 'E-games',
-            'code' => '004',
+            'id' => '004',
+            'status'=> 1,
         ]);
         DB::table('categories')->insert([
             'name' => 'Events',
-            'code' => '005',
+            'id' => '005',
+            'status'=> 1,
         ]);
     }
 }
