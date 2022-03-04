@@ -17,7 +17,11 @@ class CommentFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'text'=>  $this->faker->paragraph,
+            'status'=>  $this->faker->randomElement([1,0]),
+            'creation_date' =>  $this->faker->date(),
+
+            'post_id' => rand(1,10)
         ];
     }
 }
