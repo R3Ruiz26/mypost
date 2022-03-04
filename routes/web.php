@@ -30,6 +30,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::get('/todoposts',[PostController::class,'index']);
 Route::get('/xcategory/{id}',[PostController::class,'porCategoria']);
 
+
 Route::get('/post/categories', function () {
     return Post::with('categories')->get();
  });

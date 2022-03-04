@@ -12,10 +12,9 @@ class PostController extends Controller
 {
     public function index()
     {
-         $pt= Post::orderby('id','desc')->with('categories')->with('users')
-
+         $pts= Post::orderby('id','desc')->with('categories')->with('users')
          ->get();
-         return $pt;
+         return view('welcome', compact('pts'));
 
     }
 
