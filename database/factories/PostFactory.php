@@ -23,7 +23,7 @@ class PostFactory extends Factory
             'creation_date' =>  $this->faker->date(),
 
             'category_id' => rand(1,5),
-            'autor_id' => rand(1,10)
+            'user_id' => rand(1,10)
         ];
     }
 }
